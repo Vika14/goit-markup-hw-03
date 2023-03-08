@@ -35,6 +35,11 @@ body {
   background-color: var(--white);
 }
 
+.top-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: raleway, sans-serif;
   color: var(--headings-text);
@@ -44,10 +49,16 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-decoration: none;
+  outline: 2px solid tomato;
 }
 
 .logo-web {
   color: var(--primary-brand);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .auth {
@@ -58,12 +69,16 @@ body {
 
 .auth-link,
 .site-nav {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--headings-text);
   font-weight: 500;
   font-size: 16px;
@@ -75,6 +90,9 @@ body {
 }
 
 .address-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--body-text);
 
   font-size: 16px;
@@ -95,11 +113,20 @@ body {
   color: var(--pressed-state);
 }
 
+.top-item {
+  margin-right: 40px;
+}
+
+.top-item:last-child {
+  margin-right: 0;
+}
+
 /* hero */
 
 .hero {
   background-color: var(--hero-background);
   text-align: center;
+  outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -141,11 +168,13 @@ body {
 
 .strategy {
   background-color: var(--white);
+  margin-bottom: 120px;
 }
 
 .container {
   width: 1128px;
-
+  align-items: center;
+  justify-content: center;
   outline: 2px solid tomato;
 }
 
@@ -157,7 +186,14 @@ body {
   outline: 2px solid tomato;
 }
 
+.strat-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .strategy-title {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -166,6 +202,8 @@ body {
 }
 
 .strategy-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -175,6 +213,9 @@ body {
 /* work */
 
 .work-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -185,6 +226,8 @@ body {
 
 .work-items {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .work-item {
@@ -198,6 +241,10 @@ body {
 }
 
 .team-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 120px;
+  padding-bottom: 72px;
   color: var(--headings-text);
   font-weight: 700;
   font-size: 36px;
@@ -208,6 +255,8 @@ body {
 
 .team-items {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-item {
@@ -216,6 +265,8 @@ body {
 }
 
 .team-item-title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--headings-text);
   font-weight: 500;
   font-size: 20px;
@@ -225,6 +276,8 @@ body {
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--body-text);
   font-size: 16px;
   line-height: 1.5;
