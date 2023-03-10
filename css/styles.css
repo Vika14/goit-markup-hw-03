@@ -23,8 +23,6 @@ html {
 }
 
 body {
-  width: 1440px;
-  margin: 0;
   background-color: var(--white);
   color: var(--body-text);
   font-family: roboto, sans-serif;
@@ -138,6 +136,8 @@ img {
 .hero {
   background-color: var(--hero-background);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -145,11 +145,10 @@ img {
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
   width: 496px;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.7;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
@@ -169,7 +168,6 @@ img {
   color: var(--white);
   background-color: var(--primary-brand);
   cursor: pointer;
-  margin-bottom: 188px;
 
   border-color: transparent;
 }
@@ -185,7 +183,8 @@ img {
 
 .strategy {
   background-color: var(--white);
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .container {
@@ -200,6 +199,7 @@ img {
   display: flex;
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .strategy-item {
@@ -235,15 +235,27 @@ img {
   color: var(--body-text);
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* work */
 
 .work {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .work-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -271,16 +283,16 @@ img {
 /* team */
 
 .team {
+  padding-bottom: 32px;
   background-color: var(--light);
-  border: 1px solid #000000;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
   font-family: roboto, sans-serif;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--headings-text);
   font-weight: 700;
   font-size: 36px;
@@ -290,7 +302,6 @@ img {
 }
 
 .team-items {
-  padding-bottom: 120px;
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -303,11 +314,13 @@ img {
   background-color: var(--white);
 }
 
+.team-item:last-child {
+  margin-right: 0;
+}
+
 .team-item-title {
-  padding-top: 32px;
-  padding-bottom: 8px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   color: var(--headings-text);
   font-weight: 500;
   font-size: 20px;
@@ -317,7 +330,6 @@ img {
 }
 
 .team-text {
-  padding-bottom: 32px;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--body-text);
@@ -328,22 +340,23 @@ img {
 }
 
 .bord {
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
-  border-bottom: 1px solid #000000;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* footer */
 
 .footer {
   padding-top: 100px;
-  padding-left: 156px;
+  padding-bottom: 100px;
   background-color: var(--headings-text);
 }
 
 .footer-logo {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   font-family: raleway, sans-serif;
   color: var(--white);
 
@@ -356,7 +369,9 @@ img {
 
 .footer-text {
   width: 264px;
-  padding-bottom: 100px;
+  margin: 0;
+
+  padding-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -366,12 +381,15 @@ img {
 /* portfolio */
 
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 96px;
   background-color: var(--white);
 }
 
 .portfolio-button {
   display: flex;
   justify-content: center;
+  margin-top: 0;
   margin-bottom: 72px;
   padding-left: 0;
 }
@@ -417,12 +435,11 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  gap: 48px 24px;
 }
 
 .portfolio-work-item {
   width: 360px;
-  margin-right: 24px;
-  margin-bottom: 48px;
 }
 
 .portfolio-work-item:nth-child(3n) {
@@ -430,7 +447,7 @@ img {
 }
 
 .portfolio-work-item:nth-last-child(-n + 3) {
-  margin-bottom: 120px;
+  margin-bottom: 0;
 }
 .portfolio-work-title {
   padding-top: 32px;
