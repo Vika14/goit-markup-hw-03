@@ -32,6 +32,13 @@ img {
   display: block;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 /* Шапка */
 
 .page-header {
@@ -371,7 +378,7 @@ img {
   width: 264px;
   margin: 0;
 
-  padding-top: 16px;
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -381,8 +388,8 @@ img {
 /* portfolio */
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 120px;
   background-color: var(--white);
 }
 
@@ -426,6 +433,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border-color: transparent;
 }
 
 .portfolio-works {
@@ -450,7 +458,7 @@ img {
   margin-bottom: 0;
 }
 .portfolio-work-title {
-  padding-top: 32px;
+  /* padding-top: 32px; */
   margin-top: 0;
   margin-bottom: 0;
   color: var(--headings-text);
@@ -462,7 +470,7 @@ img {
 
 .portfolio-work-text {
   margin-top: 8px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   color: var(--body-text);
   font-size: 16px;
   line-height: 1.5;
@@ -474,6 +482,10 @@ img {
 }
 
 .portfolio-bord {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
